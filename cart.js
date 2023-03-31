@@ -161,7 +161,7 @@ function payNow(e) {
     tx_ref: txRef,
     amount: totalAmountpaid,
     currency: "NGN",
-    redirect_url: "https://success.html/",
+
     customer: {
       email: email,
       phone_number: phone,
@@ -179,7 +179,7 @@ function payNow(e) {
       const reference = data.tx_ref;
       console.log("This is the data returned after a charge", data);
       if (data.tx.chargedata == "00" || data.tx.chargedata == "0") {
-        window.location = "success.html"
+        window.location.href = "success.html"
         // redirect to a success page
       } else {
         window.location = "index.html" + reference;
