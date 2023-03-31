@@ -179,7 +179,7 @@ function payNow(e) {
       const reference = data.tx_ref;
       console.log("This is the data returned after a charge", data);
       if (data.tx.chargedata == "00" || data.tx.chargedata == "0") {
-        window.location.href = "https://fcc-lipeunim.vercel.app/success.html"
+        window.location = "https://fcc-lipeunim.vercel.app/success.html"
         // redirect to a success page
       } else {
         window.location = "https://fcc-lipeunim.vercel.app/failure.html" + reference;
