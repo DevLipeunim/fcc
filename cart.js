@@ -161,7 +161,7 @@ function payNow(e) {
     tx_ref: txRef,
     amount: totalAmountpaid,
     currency: "NGN",
-
+    redirect_url: "https://fcc-lipeunim.vercel.app/success.html",
     customer: {
       email: email,
       phone_number: phone,
