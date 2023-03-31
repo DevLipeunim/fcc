@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Success</title>
+  </head>
+  <style>
+    .success {
+      color: #88b04b;
+      font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+      font-weight: 900;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .checkmark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #9abc66;
+      font-size: 100px;
+      line-height: 200px;
+    }
+
+    .check {
+      width: 100%;
+      margin-top: 3px;
+      padding: 10px 0;
+      background-color: #d6a55f;
+      color: white;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <body>
+    <div id="popUp" class="modal" data-modal>
+      <div class="modal-close-overlay" data-modal-overlay></div>
+
+      <div class="modal-content">
+
+        <div
+          style="
+            border-radius: 200px;
+            height: 200px;
+            width: 200px;
+            background: #f8faf5;
+            margin-bottom: -80px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+          "
+        >
+          <i class="checkmark">✓</i>
+        </div>
+
+        <div class="newsletter">
+          <div class="newsletter-header">
+            <h3 class="newsletter-title">Success</h3>
+            <p class="newsletter-desc">
+              We hope that you enjoy your experience with us and that you
+              recommend us to your friends and family. <br /><b
+                >Thank you for choosing Fehin Cakes and Confectionery!!</b
+              >
+              <br />Thank you for considering us for your special event needs!
+            </p>
+            <a href="index.html">
+              <button type="submit" class="check">Go home</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
