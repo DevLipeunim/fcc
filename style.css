@@ -1320,7 +1320,7 @@ button:hover {
   padding: 0.4rem;
   right: 20px;
   border: 0;
-  z-index: 9999;
+  z-index: 2;
   /* width: 50px;
   height: 50px;
   line-height: 50px; */
