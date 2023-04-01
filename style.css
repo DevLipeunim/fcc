@@ -750,9 +750,17 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.newsletter-header img{
+  width: 80px;
+  margin: -50px;
+  /* border-radius: 50%; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
 .newsletter-desc {
   color: var(--sonic-silver);
+  font-family: "Poppins", sans-serif;
   font-size: var(--fs-7);
+  margin-top: 5px;
   line-height: 1.6;
 }
 
