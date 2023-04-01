@@ -145,10 +145,10 @@ function payNow(e) {
 
   const txRef = "fcc_" + Math.floor(Math.random() * 1000000000 + 1); //Generate a random id for the transaction reference
   const email = document.getElementById("email").value;
-  const phone = document.getElementById("phoneNumber").value;
+  const phone = document.getElementById("phone").value;
   const name = document.getElementById("name").value;
   const address = document.getElementById("address").value;
-  const deliveryDate = document.getElementById("deliveryDate").value;
+  const date = document.getElementById("date").value;
 
   basket = [];
   generateCartItems();
@@ -162,6 +162,10 @@ function payNow(e) {
     amount: totalAmountpaid,
     currency: "NGN",
     redirect_url: "https://fcc-lipeunim.vercel.app/success.html",
+    meta: {
+      address: address,
+      date: date,
+    },
     customer: {
       email: email,
       phone_number: phone,
@@ -182,7 +186,7 @@ function payNow(e) {
         window.location = "https://fcc-lipeunim.vercel.app/success.html"
         // redirect to a success page
       } else {
-        window.location = "https://fcc-lipeunim.vercel.app/failure.html" + reference;
+        window.location = "https://fcc-lipeunim.vercel.app/failure.html"
         // redirect to a failure page.
       }
     },
