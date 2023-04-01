@@ -28,6 +28,7 @@ let generateCartItems = () => {
               </h4>
               <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
           </div>
+          
 
           <div class="buttons">
               <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
