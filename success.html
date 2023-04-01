@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css" />
     <title>Success</title>
   </head>
@@ -49,23 +53,9 @@
 
       <div class="modal-content">
 
-        <div
-          style="
-            border-radius: 200px;
-            height: 200px;
-            width: 200px;
-            background: #f8faf5;
-            margin-bottom: -80px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 60px;
-          "
-        >
-          <i class="checkmark">✓</i>
-        </div>
-
         <div class="newsletter">
           <div class="newsletter-header">
+            <img src="images/check.png" alt="check">
             <h3 class="newsletter-title">Success</h3>
             <p class="newsletter-desc">
               We hope that you enjoy your experience with us and that you
@@ -74,12 +64,36 @@
               >
               <br />Thank you for considering us for your special event needs!
             </p>
-            <a href="https://fcc-lipeunim.vercel.app/index.html">
+            <a href="index.html">
               <button type="submit" class="check">Go home</button>
             </a>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="confetti.js"></script>
+
+    <!-- Confetti  JS-->
+    <script>
+      // start
+
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+      };
+
+      //  Stop
+
+      const stop = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 8000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+      };
+
+      start();
+      stop();
+    </script>
   </body>
 </html>
