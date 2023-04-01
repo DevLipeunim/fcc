@@ -217,19 +217,10 @@ const modal = document.querySelector('[data-modal]');
 const modalCloseBtn = document.querySelector('[data-modal-close]');
 
 // modal function
-const modalCloseFunc = function () { modal.classList.add('closed') }
 
-// modal eventListener
-modalCloseBtn.addEventListener('click', modalCloseFunc);
 
-// show popUP 
-function popUp() {
-  const popUp = document.getElementById("popUp");
-  // when the scroll is higher than 560 viewport height, add the show-scroll class
-  if (this.scrollY >= 150) popUp.classList.add("show-pop");
-  else popUp.classList.remove("show-pop");
-}
-window.addEventListener("scroll", popUp);
+
+
 
 // show Whatsapp icon
 function scrollUp() {
