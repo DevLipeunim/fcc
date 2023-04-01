@@ -167,12 +167,16 @@ function payNow(e) {
       address: address,
       date: date,
     },
+
+
+
+
     customer: {
       email: email,
       phone_number: phone,
       name: name,
-      address: address,
-      delivery_date: deliveryDate,
+
+
     },
     customizations: {
       title: "Fehin Cakes & Confectionery",
